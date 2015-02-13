@@ -6,7 +6,7 @@ using System.Text;
 namespace AIServo.Engine
 {
 
-    public class Exposure_Value
+    public abstract class Exposure_Value
     {
         //Field(s)
         protected string _value;

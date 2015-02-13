@@ -112,12 +112,14 @@ namespace AIServo.Engine
 
         public static ShutterSpeed_Value operator ++(ShutterSpeed_Value var)
         {
-            return (ShutterSpeed_Value)var.OneThirdStep_Increment();
+            var.OneThirdStep_Increment();
+            return var as ShutterSpeed_Value;
         }
 
         public static ShutterSpeed_Value operator --(ShutterSpeed_Value var)
         {
-            return (ShutterSpeed_Value)var.OneThirdStep_Decrement();
+            var.OneThirdStep_Decrement();
+            return var as ShutterSpeed_Value;
         }
     }
 }
