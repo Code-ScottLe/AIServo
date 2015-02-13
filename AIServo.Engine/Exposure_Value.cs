@@ -5,9 +5,19 @@ using System.Text;
 
 namespace AIServo.Engine
 {
+
     public class Exposure_Value
     {
-        //Base class that hold the data that an exposure value have to support.
-        //I.E basic that hold true for ISO, Apeture and Shutter Speed.
+        private string _value;
+
+        public Exposure_Value()
+        {
+            throw new System.NotImplementedException();
+        }
+
+
+        public Exposure_Value OneThirdStep_Increment();
+
+        public Exposure_Value OneThirdStep_Decrement();
     }
 }
