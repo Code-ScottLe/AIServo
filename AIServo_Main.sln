@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIServo_Main.WindowsPhone",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIServo.Engine", "AIServo.Engine\AIServo.Engine.csproj", "{BD31BE15-9056-43F7-B882-7BA662B591ED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressionEvaluation", "ExpressionEvaluation\ExpressionEvaluation.csproj", "{977BF071-C9EB-495A-A990-681BA9B5640A}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		AIServo_Main\AIServo_Main.Shared\AIServo_Main.Shared.projitems*{6307049a-cbc9-4cf9-9442-364662286bf7}*SharedItemsImports = 13
@@ -84,6 +86,16 @@ Global
 		{BD31BE15-9056-43F7-B882-7BA662B591ED}.Release|ARM.ActiveCfg = Release|Any CPU
 		{BD31BE15-9056-43F7-B882-7BA662B591ED}.Release|x64.ActiveCfg = Release|Any CPU
 		{BD31BE15-9056-43F7-B882-7BA662B591ED}.Release|x86.ActiveCfg = Release|Any CPU
+		{977BF071-C9EB-495A-A990-681BA9B5640A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{977BF071-C9EB-495A-A990-681BA9B5640A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{977BF071-C9EB-495A-A990-681BA9B5640A}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{977BF071-C9EB-495A-A990-681BA9B5640A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{977BF071-C9EB-495A-A990-681BA9B5640A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{977BF071-C9EB-495A-A990-681BA9B5640A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{977BF071-C9EB-495A-A990-681BA9B5640A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{977BF071-C9EB-495A-A990-681BA9B5640A}.Release|ARM.ActiveCfg = Release|Any CPU
+		{977BF071-C9EB-495A-A990-681BA9B5640A}.Release|x64.ActiveCfg = Release|Any CPU
+		{977BF071-C9EB-495A-A990-681BA9B5640A}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -93,5 +105,6 @@ Global
 		{F7C934A2-AD95-4381-B34C-1F6478A2088B} = {7C6D1020-C570-44D0-91CD-7A256B6D2950}
 		{64462AC7-7722-4FE1-91F7-F0B8FE6FAAAB} = {7C6D1020-C570-44D0-91CD-7A256B6D2950}
 		{BD31BE15-9056-43F7-B882-7BA662B591ED} = {7C6D1020-C570-44D0-91CD-7A256B6D2950}
+		{977BF071-C9EB-495A-A990-681BA9B5640A} = {7C6D1020-C570-44D0-91CD-7A256B6D2950}
 	EndGlobalSection
 EndGlobal

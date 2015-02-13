@@ -8,16 +8,19 @@ namespace AIServo.Engine
 
     public class Exposure_Value
     {
-        private string _value;
+        //Field(s)
+        protected string _value;
 
+        //Constructor(s)
         public Exposure_Value()
         {
-            throw new System.NotImplementedException();
+            //Default Constructor
         }
 
 
-        public Exposure_Value OneThirdStep_Increment();
+        //Method(s)
+        public abstract Exposure_Value OneThirdStep_Increment();
 
-        public Exposure_Value OneThirdStep_Decrement();
+        public abstract Exposure_Value OneThirdStep_Decrement();
     }
 }

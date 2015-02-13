@@ -5,11 +5,11 @@
     <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BD31BE15-9056-43F7-B882-7BA662B591ED}</ProjectGuid>
+    <ProjectGuid>{977BF071-C9EB-495A-A990-681BA9B5640A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AIServo.Engine</RootNamespace>
-    <AssemblyName>AIServo.Engine</AssemblyName>
+    <RootNamespace>ExpressionEvaluation</RootNamespace>
+    <AssemblyName>ExpressionEvaluation</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -35,37 +35,16 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .NET Framework is automatically included -->
-    <None Include="Exposure_Value_Diagram.cd" />
-    <None Include="packages.config" />
+    <Content Include="Documents\Readme.txt" />
   </ItemGroup>
   <ItemGroup>
     <TargetPlatform Include="WindowsPhoneApp, Version=8.1" />
     <TargetPlatform Include="Windows, Version=8.1" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Aperture_Value.cs" />
-    <Compile Include="Exposure_Value.cs" />
-    <Compile Include="ISO_Value.cs" />
+    <Compile Include="ExpressionTree.cs" />
+    <Compile Include="Node.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ShutterSpeed_Value.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Assets\OneThirdStep_ShutterSpeedRange.txt" />
-    <Content Include="Documents\ReadMe.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="PCLStorage">
-      <HintPath>..\packages\PCLStorage.1.0.2\lib\portable-win8+wpa81\PCLStorage.dll</HintPath>
-    </Reference>
-    <Reference Include="PCLStorage.Abstractions">
-      <HintPath>..\packages\PCLStorage.1.0.2\lib\portable-win8+wpa81\PCLStorage.Abstractions.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ExpressionEvaluation\ExpressionEvaluation.csproj">
-      <Project>{977bf071-c9eb-495a-a990-681ba9b5640a}</Project>
-      <Name>ExpressionEvaluation</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
