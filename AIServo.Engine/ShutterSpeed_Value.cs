@@ -5,6 +5,7 @@ using System.Text;
 using System.IO;
 using PCLStorage;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace AIServo.Engine
 {
@@ -16,6 +17,7 @@ namespace AIServo.Engine
         /*set up the ShutterSpeed_Range.
         Limitation: This is hard-coded, please switch to reading from files in the future if possible.
          * */
+       
         private static List<string> ShutterSpeed_Range = new List<string>()
             {
                 "1/8000", "1/6400", "1/5000", "1/4000", "1/3200", "1/2500", "1/2000", "1/1600"
@@ -43,6 +45,7 @@ namespace AIServo.Engine
             Accept a string shutter_speed, which represent a shutter speed of the setting in string
              * */
             Tv = shutter_speed;
+            
         }
 
 
@@ -120,6 +123,17 @@ namespace AIServo.Engine
         {
             var.OneThirdStep_Decrement();
             return var as ShutterSpeed_Value;
+        }
+
+        public static int operator -(ShutterSpeed_Value var1, ShutterSpeed_Value var2)
+        {
+            //return the number of 1/3 step different between 2 shutter value
+
+            //look up the shutter speed in the table.
+            int index_var1 = ShutterSpeed_Range.IndexOf(var1.Tv);
+            int index_var2 = ShutterSpeed_Range.IndexOf(var2.Tv);
+
+            return index_var1 - index_var2;
         }
     }
 }

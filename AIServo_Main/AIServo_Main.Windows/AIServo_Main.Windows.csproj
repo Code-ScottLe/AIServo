@@ -135,6 +135,12 @@
       <HintPath>..\..\packages\PCLStorage.1.0.2\lib\portable-win8+wpa81\PCLStorage.Abstractions.dll</HintPath>
     </Reference>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\AIServo.Engine\AIServo.Engine.csproj">
+      <Project>{bd31be15-9056-43f7-b882-7ba662b591ed}</Project>
+      <Name>AIServo.Engine</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>
   </PropertyGroup>
