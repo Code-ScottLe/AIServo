@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Aperture_Value.cs" />
+    <Compile Include="Exposure.cs" />
     <Compile Include="Exposure_Value.cs" />
     <Compile Include="ISO_Value.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

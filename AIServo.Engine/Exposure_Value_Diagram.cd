@@ -10,22 +10,29 @@
   <Class Name="AIServo.Engine.ISO_Value">
     <Position X="5.5" Y="4.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAQAAAAAIQAAAEAIAAAAAAAAAIAAAAAAAAAAAQ=</HashCode>
       <FileName>ISO_Value.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="AIServo.Engine.Aperture_Value">
     <Position X="9.5" Y="4.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAIQAAAEAIAAAAAAAAAIAAAAAIAAAAgA=</HashCode>
       <FileName>Aperture_Value.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="AIServo.Engine.ShutterSpeed_Value">
     <Position X="13.25" Y="4.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAIQAAAEAIAAAAAAAAAIAAAABAEAAAAA=</HashCode>
       <FileName>ShutterSpeed_Value.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AIServo.Engine.Exposure">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAABAAAAAAQAAAAAAAAEAAAACAAAAAAQ=</HashCode>
+      <FileName>Exposure.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

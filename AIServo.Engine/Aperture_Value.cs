@@ -12,7 +12,7 @@ namespace AIServo.Engine
 
         //Aperture range
         //Subject to be changed in the later build
-        private List<string> Aperture_Range = new List<string>() {"1.0","1.1","1.2","1.4","1.6","1.8","2.0","2.2","2.5","2.8",
+        private static List<string> Aperture_Range = new List<string>() {"1.0","1.1","1.2","1.4","1.6","1.8","2.0","2.2","2.5","2.8",
             "3.2","3.5","4.0","4.5","5.0","5.6","6.3","7.1","8.0","9.0","10.0","11.0","13.0","14.0","16.0","18.0","20.0","22.0"};
 
 
@@ -121,6 +121,24 @@ namespace AIServo.Engine
             var.OneThirdStep_Decrement();
 
             return var;
+        }
+
+        public static int operator -(Aperture_Value var1, Aperture_Value var2)
+        {
+            /*Overload for oprator -
+             * return the different in EV step in term of 1/3 step count between 2 value
+             * */
+
+            //get the index in the table for the first value
+            int index_1 = Aperture_Range.IndexOf(var1.Av);
+
+            //get the index in the table for the 2nd value
+            int index_2 = Aperture_Range.IndexOf(var2.Av);
+
+            //return the different
+            //NOTE: because the Aperture table is built from big aperture to small aperture, the different on the table will have to be negated
+            //for corrent value in EV difference
+            return (-1) * (index_1 - index_2);
         }
     }
 }
