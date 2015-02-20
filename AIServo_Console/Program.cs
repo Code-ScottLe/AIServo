@@ -11,23 +11,11 @@ namespace AIServo_Console
     {
         static void Main(string[] args)
         {
-            ISO_Value iso = new ISO_Value(200);
+            Exposure ex_1 = new Exposure("200", "2.8", "1/60");
+            Exposure ex_2 = new Exposure("200", "2.8", "1/50");
 
-            ShutterSpeed_Value shutter = new ShutterSpeed_Value("1/40");
-
-            Aperture_Value aperture = new Aperture_Value(2.2);
-
-            //Later
-
-            ISO_Value a_iso = new ISO_Value(1600);
-
-            ShutterSpeed_Value a_shutter = new ShutterSpeed_Value("1/2");
-
-            Aperture_Value a_aperture = new Aperture_Value(1.4);
-
-
-            Console.WriteLine("ISO Diff: {0}\nShutter Diff: {1}\nAperture Diff: {2}", a_iso - iso, a_shutter - shutter, aperture - a_aperture);
-
+            var result = ex_1 - ex_2;
+            Console.WriteLine("The different in EV is : {0} * 1/3", result);
 
         }
     }

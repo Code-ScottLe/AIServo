@@ -73,5 +73,23 @@ namespace AIServo.Engine
             _shutter_speed = new ShutterSpeed_Value(shutterspeed_value);
          
         }
+
+
+        //methods
+
+
+        //OP overload
+
+        public static int operator-(Exposure var1, Exposure var2)
+        {
+            //return the different in number of 1/3 steps
+            //Multiply with 1/3 for correct exposure difference.
+            int iso_diff = var1.ISO - var2.ISO;
+            int av_diff = var1.Aperture - var2.Aperture;
+            int tv_diff = var1.Shutter_Speed - var2.Shutter_Speed;
+
+            return iso_diff + av_diff + tv_diff;
+        }
+    
     }
 }
